@@ -6,8 +6,10 @@ const {validateAmount,validateDefaultBankName,validateReference,clickContinueBtn
 Given('I entered test Merchant details',async function(){
     await setMerchantCode(defaultMerchentData.merchentCode);
     await setAmountValue(defaultMerchentData.amount);
+
     await clickPayWithPoliBtn();
     await clickContinueBtn();
+
 
 })
 

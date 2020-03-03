@@ -2,7 +2,7 @@ const assert = require('assert');
 const getElementTextValue  = require('../actions/getElementTextValue')
 const selectValueByRegExText  = require('../actions/selectValueByRegExText')
 const {confirmBtn} =require('./paymentConfirmationPg');
-const {clickElement,clickElementAndWaitForNextPgElement} = require('..//actions/clickElement')
+const {clickElement} = require('..//actions/clickElement')
 const scope = require('../BrowserScope');
 
 const pg = {
@@ -29,5 +29,6 @@ module.exports.validateSelectedAccount = async (account) =>{
 
 module.exports.clickContinueBtn = async () =>{
    await scope.page.waitFor(1000);
-   await clickElementAndWaitForNextPgElement(pg.continueBtn,confirmBtn);
+   await clickElement(pg.continueBtn);
+//    await clickElementAndWaitForNextPgElement(pg.continueBtn,confirmBtn);
 }

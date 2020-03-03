@@ -1,8 +1,7 @@
 const scope = require('../BrowserScope');
 const  assert = require('assert')
 module.exports = async function(selector, value) {
-    const valueToSet = value ? value : '';
-
+    
     const setValue = (el, valueToSet) => {
         const tagName = el.tagName ? el.tagName.toLowerCase() : null;
         const regex = RegExp(valueToSet);
@@ -25,6 +24,7 @@ module.exports = async function(selector, value) {
     };
 
     await scope.page.waitForSelector(selector);
+    const valueToSet = value ? value : '';
     const actual = await scope.page.$eval(selector, setValue, valueToSet);   
 
     assert.strictEqual(RegExp(valueToSet).test(actual),true, `Error: unable to set "${selector}" value to "${value}"`);

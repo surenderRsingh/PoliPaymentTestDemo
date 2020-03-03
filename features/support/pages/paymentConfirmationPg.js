@@ -1,5 +1,5 @@
 const scope = require('../BrowserScope');
-const {clickElementAndWaitForNextPgElement} = require('../actions/clickElement');
+const {clickElement} = require('../actions/clickElement');
 const {receiptBody} = require('./transactionReceipt');
 
 const pg = {
@@ -8,8 +8,8 @@ const pg = {
 }
 
 module.exports.confirmPayment = async ()=>{
-    await scope.page.waitFor(1000);
-    await clickElementAndWaitForNextPgElement(pg.confirmBtn,receiptBody);
+    
+    await clickElement(pg.confirmBtn);
 }
 
 module.exports.confirmBtn = pg.confirmBtn
