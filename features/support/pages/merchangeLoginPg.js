@@ -1,7 +1,6 @@
 const scope = require('../BrowserScope');
 const setElementValue = require('../actions/setElementValue');
 const {clickElement} = require('../actions/clickElement');
-const {selectedBankLabel} = require('./accountSelectionPg');
 const pg = {
     loginEdit:'input[name="Username"]',
     passwordEdit: 'input[name="Password"]',
@@ -11,6 +10,5 @@ const pg = {
 module.exports.login =  async function(username,password){
     await setElementValue(pg.loginEdit,username);
     await setElementValue(pg.passwordEdit,password);
-    await clickElement(pg.loginBtn)
-    console.log("Logged in ")
+    await clickElement(pg.loginBtn);
 }

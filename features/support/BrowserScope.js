@@ -13,14 +13,7 @@ scope.initializeBrowser = async function() {
 };
 
 scope.closeBrowser = async function() {
-  // setTimeout(async () => {
-  //     if(this.browser){
-  //         await this.browser.close();
-  //      }
-  //      this.browser = null;
-  //      this.page = null;
-  // }, 2000);
-
+  
   if (this.browser) {
     await this.browser.close();
   }

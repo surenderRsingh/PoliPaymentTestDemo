@@ -1,7 +1,6 @@
 const assert = require('assert');
-const getElementTextValue  = require('../actions/getElementTextValue')
-const selectValueByRegExText  = require('../actions/selectValueByRegExText')
-const {confirmBtn} =require('./paymentConfirmationPg');
+const getElementTextValue  = require('../actions/getElementTextValue');
+const selectValueByRegExText  = require('../actions/selectValueByRegExText');
 const {clickElement} = require('..//actions/clickElement')
 const scope = require('../BrowserScope');
 
@@ -11,7 +10,6 @@ const pg = {
     continueBtn : 'button.stp-button.primary-button'
 }
 
-module.exports.selectedBankLabel = pg.selectedBankLabel;
 
 module.exports.validateSelectedBank = async (bank) =>{
     const actual = await getElementTextValue(pg.selectedBankLabel)

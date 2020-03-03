@@ -1,7 +1,7 @@
-const scope = require("../BrowserScope");
+const assert = require('assert');
 const getElementTextValue = require("../actions/getElementTextValue");
 const {clickElement} = require('../actions/clickElement');
-const assert = require('assert')
+
 
 const pg = {
   amountLabel: "#merchantInformationRight div:nth-of-type(1)",
