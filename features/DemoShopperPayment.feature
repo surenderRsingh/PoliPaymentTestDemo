@@ -7,18 +7,18 @@ Feature: Test assignment
     And Reference on Bank Selection Page should be 'MyRef01'
     And Default bank on Bank Selection Page should be 'iBank AU 01'
 
-    # Scenario: Validate default Default Bank details after shopper is logged in
-    # Given I entered test Merchant details
-    # And i enter 'DemoShopper' as username
-    # And i enter 'DemoShopper' as password
-    # When i click on log in
-    # Then selected bank should be 'iBank'
+    Scenario: Validate default Default Bank details after shopper is logged in
+    Given I entered test Merchant details
+    And i enter 'DemoShopper' as username
+    And i enter 'DemoShopper' as password
+    When i click on log in
+    Then selected bank should be 'iBank'
     
     
-    # Scenario: Shopper making a successful payment
-    # Given I entered test Merchant details
-    # And I login with default credentials
-    # And i select account 'Cheque .123456. 46532471 .* available.'
-    # And i click continue on bank account Page
-    # When i click confirm on payment confirmation Page
-    # Then transaction receipt screen should be displayed
+    Scenario: Shopper making a successful payment
+    Given I entered test Merchant details
+    And I login with default credentials
+    And i select account 'Cheque .123456. 46532471 .* available.'
+    And i click continue on bank account Page
+    When i click confirm on payment confirmation Page
+    Then transaction receipt screen should be displayed
