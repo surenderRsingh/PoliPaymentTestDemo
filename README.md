@@ -1,12 +1,11 @@
 # PoliPaymentTestDemo
 
-#Step 1
-#get dependencies
+**Step 1 -** Get dependencies
+
 ```
 npm install
 ```
-#Step 2
-#Run test
+**Step 2 -** Run test
 ```
 npm test
 ```
