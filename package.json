@@ -1,0 +1,15 @@
+{
+  "name": "politestassignment",
+  "version": "1.0.0",
+  "description": "Tes assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "author": "surender singh",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^6.0.5",
+    "puppeteer": "^2.1.1"
+  }
+}
