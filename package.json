@@ -4,12 +4,13 @@
   "description": "Tes assignment",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js -f node_modules/cucumber-pretty -f json:test/report/cucumber.json"
   },
   "author": "surender singh",
   "license": "ISC",
   "dependencies": {
     "cucumber": "^6.0.5",
+    "cucumber-pretty": "^6.0.0",
     "puppeteer": "^2.1.1"
   }
 }
