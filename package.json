@@ -4,7 +4,7 @@
   "description": "Tes assignment",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js -f node_modules/cucumber-pretty -f json:test/report/cucumber.json"
+    "test": "cucumber-js -f node_modules/cucumber-pretty "
   },
   "author": "surender singh",
   "license": "ISC",
